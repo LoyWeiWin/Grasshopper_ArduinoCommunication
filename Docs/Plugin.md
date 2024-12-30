@@ -1,8 +1,3 @@
-
----
-
-### **4. `PLUGINS.md`**
-```markdown
 # Required Grasshopper Plugins
 
 This project uses the following plugins to facilitate communication between Grasshopper and Arduino:
@@ -16,10 +11,9 @@ This project uses the following plugins to facilitate communication between Gras
 - **Description:** Facilitates advanced communication protocols, including UDP and OSC.
 - **Download:** [GHowl](https://www.food4rhino.com/en/app/ghowl)
 
-## Additional Plugins (Optional)
-- **Weaverbird:** For advanced mesh processing.
-- **Kangaroo:** For real-time physics simulations.
-
 ### Plugin Configuration
 - Ensure plugins are loaded in Grasshopper's `Libraries` folder.
 - Restart Rhino after installation.
+
+**Note**
+- Detail steps can be seen in this website. https://parametricbydesign.com/grasshopper/tutorials/installing-grasshopper-and-plugins/
