@@ -1,8 +1,3 @@
-
----
-
-### **3. `USAGE.md`**
-```markdown
 # Usage Guide
 
 ## Grasshopper-to-Arduino Workflow
