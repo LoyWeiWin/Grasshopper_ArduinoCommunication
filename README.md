@@ -1,18 +1,3 @@
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
 # Grasshopper_ArduinoCommunication Library
 
 The **Grasshopper_ArduinoCommunication** library is designed to facilitate seamless interaction between Grasshopper and Arduino boards. This library provides users with a suite of plugins to enhance communication and create a smoother, more intuitive workflow.
