@@ -4,8 +4,7 @@ The **Grasshopper_ArduinoCommunication** library is designed to facilitate seaml
 
 ## Features
 - **Compatibility:** Supports Arduino UNO, NANO, and Mega boards.
-- **Enhanced Communication:** Enables bi-directional communication between Grasshopper and Arduino via serial communication.
-- **User-Friendly Design:** Simplifies the integration of Arduino functionality into Grasshopper projects.
+- **Real-time Communication:** Enables bi-directional communication between Grasshopper and Arduino via serial communication.
 
 ## Requirements
 - **Grasshopper:** Ensure you have Grasshopper installed. Note: The Firefly plugin is not supported in Rhino 8.
