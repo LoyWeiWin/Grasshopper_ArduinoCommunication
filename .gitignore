@@ -1,0 +1,9 @@
+# Ignore files with 'adv' in the filename (case-insensitive)
+*adv*
+*ADV*
+
+# Ignore files with .rhl extension
+*.rhl
+
+# Ignore Rhino backup files with .3dmbak extension
+*.3dmbak
