@@ -12,19 +12,6 @@ The **Grasshopper_ArduinoCommunication** library is designed to facilitate seaml
 - **Arduino IDE:** Install the [Arduino IDE](https://www.arduino.cc/en/software) to upload code to your Arduino boards.
 - **Arduino Boards:** Compatible with Arduino UNO, NANO, and Mega.
 
-## Installation
-1. Download the library from the repository.
-2. Place the downloaded files into your Grasshopper libraries folder.
-   - On Windows: `C:\Users\[YourUsername]\AppData\Roaming\Grasshopper\Libraries`
-3. Restart Rhino and Grasshopper.
-4. Download and install the Firefly plugin from [Food4Rhino](https://www.food4rhino.com/en/app/firefly). Ensure you are using Rhino 6 or 7, as Firefly is not supported in Rhino 8.
-
-## Getting Started
-1. Open the Arduino IDE.
-2. Load or write the desired Arduino sketch.
-3. Upload the sketch to your Arduino board (UNO, NANO, or Mega).
-4. In Grasshopper, use the Firefly plugin components to establish communication with the Arduino board.
-
 ## Example Use Cases
 - Control LEDs, servos, or motors from Grasshopper.
 - Read sensor data (e.g., temperature, light) into Grasshopper for further analysis.
