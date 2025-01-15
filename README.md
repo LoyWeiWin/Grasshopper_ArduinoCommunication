@@ -1,6 +1,6 @@
 # Grasshopper_ArduinoCommunication Library
 
-The **Grasshopper_ArduinoCommunication** library is designed to facilitate seamless interaction between Grasshopper and Arduino boards. This library provides users with a suite of plugins to enhance communication and create a smoother, more intuitive workflow.
+The **Grasshopper_ArduinoCommunication** library is designed to facilitate seamless interaction between Grasshopper and Arduino boards. This repo provides users with a list of guide to assist you to communicate with Arduino boards or vice versa.
 
 ## Features
 - **Compatibility:** Supports Arduino UNO, NANO, and Mega boards.
@@ -12,20 +12,33 @@ The **Grasshopper_ArduinoCommunication** library is designed to facilitate seaml
 - **Arduino IDE:** Install the [Arduino IDE](https://www.arduino.cc/en/software) to upload code to your Arduino boards.
 - **Arduino Boards:** Compatible with Arduino UNO, NANO, and Mega.
 
-## Example Use Cases
-- Control LEDs, servos, or motors from Grasshopper.
-- Read sensor data (e.g., temperature, light) into Grasshopper for further analysis.
-- Develop interactive prototypes combining Grasshopper's computational design capabilities with Arduino's hardware interface.
-
-## Tutorials
+## Getting Started
 Here are some useful video tutorials to get you started:
 - [Introduction to Firefly for Grasshopper](https://www.youtube.com/watch?v=a1fwyfkEHAg)
+- [Interactive Design with Firefly](https://www.youtube.com/watch?v=4cGnw35fzzM)
+
+## Use Cases
 - [Firefly and Arduino LED Control](https://www.youtube.com/watch?v=TYRZSxwqlGg)
 - [Reading Sensor Data with Firefly](https://www.youtube.com/watch?v=yyuM2p2UDsE)
 - [Advanced Arduino Prototyping in Grasshopper](https://www.youtube.com/watch?v=RIMbaeGnDlI)
-- [Interactive Design with Firefly](https://www.youtube.com/watch?v=4cGnw35fzzM)
 
-## Contributions
-Contributions are welcome! Please feel free to submit issues or pull requests to improve the library.
+## Repository Structure
+- `GrasshopperFiles/`: Grasshopper scripts.
+- `Assets/`: Images, thumbnails and videos
+- `Docs/`: Documentation for installation, and troubleshooting.
 
+> [!TIP]
+> For more setup instrucions and usage, see the [Wiki](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki).
 
+## Contributing
+Contributions to improve this workflow are welcome! Please follow the contributing guidelines in the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki/06_Contributing-Guidelines) in wiki.
+
+## Code of Conduct
+This project follows the Contributor Covenant Code of Conduct. Please read our [Code of Conduct](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/blob/main/CODE_OF_CONDUCT.md) before contributing.
+
+> [!WARNING]  
+> If you are unfamiliar with using Arduino, please ensure you have supervision from a qualified advisor or professional. Alternatively, simulate your intended workflow in a Adobe TinkerCAD before working with Arduino.
+> The contributor or owner of this repository is not responsible for any physical damage, injury, or harm caused to the immediate environment or individuals due to improper usage of the tools.
+
+## Acknowledgements
+This project was independently developed as part of my personal initiative and commitment to advancing this field.
