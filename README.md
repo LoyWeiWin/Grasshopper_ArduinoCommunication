@@ -1,6 +1,6 @@
 # Grasshopper_ArduinoCommunication Library
 
-The **Grasshopper_ArduinoCommunication** library is designed to facilitate seamless interaction between Grasshopper and Arduino boards. This repo provides users with a list of guide to assist you to communicate with Arduino boards or vice versa.
+The **Grasshopper_ArduinoCommunication** repo is designed to facilitate seamless interaction between Grasshopper and Arduino boards.
 
 ## Features
 - **Compatibility:** Supports Arduino UNO, NANO, and Mega boards.
