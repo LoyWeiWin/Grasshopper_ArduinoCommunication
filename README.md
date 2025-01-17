@@ -1,4 +1,4 @@
-# Grasshopper_ArduinoCommunication Library
+# Grasshopper_ArduinoCommunication
 
 The **Grasshopper_ArduinoCommunication** repo is designed to facilitate seamless interaction between Grasshopper and Arduino boards.
 
