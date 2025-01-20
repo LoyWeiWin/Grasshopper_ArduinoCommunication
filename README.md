@@ -31,7 +31,7 @@ Here are some useful video tutorials to get you started:
 > For more setup instrucions and usage, see the [Wiki](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki).
 
 ## Contributing
-Contributions to improve this workflow are welcome! Please follow the contributing guidelines in the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki/06_Contributing-Guidelines) in wiki.
+Contributions to improve this workflow are welcome! Please follow the contributing guidelines in the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki/05_Contributing-Guidelines) in wiki.
 
 ## Code of Conduct
 This project follows the Contributor Covenant Code of Conduct. Please read our [Code of Conduct](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/blob/main/CODE_OF_CONDUCT.md) before contributing.
