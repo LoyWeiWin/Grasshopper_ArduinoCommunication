@@ -7,7 +7,7 @@ The **Grasshopper_ArduinoCommunication** repo is designed to facilitate seamless
 - **Real-time Communication:** Enables bi-directional communication between Grasshopper and Arduino via serial communication.
 
 ## Requirements
-- **Grasshopper:** Ensure you have Grasshopper installed. Note: The Firefly plugin is not supported in Rhino 8.
+- **Grasshopper:** Ensure you have Grasshopper installed. Note: The Firefly plugin is **not supported in Rhino 8**.
 - **Firefly Plugin:** Install the [Firefly Grasshopper Plugin](https://www.food4rhino.com/en/app/firefly) to enable communication between Grasshopper and Arduino. Use a Rhino version compatible with Firefly (e.g., Rhino 6 or 7).
 - **Arduino IDE:** Install the [Arduino IDE](https://www.arduino.cc/en/software) to upload code to your Arduino boards.
 - **Arduino Boards:** Compatible with Arduino UNO, NANO, and Mega.
