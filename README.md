@@ -1,6 +1,6 @@
 # Grasshopper_ArduinoCommunication
 
-The **Grasshopper_ArduinoCommunication** repo is designed to facilitate seamless interaction between Grasshopper and Arduino boards.
+The Grasshopper_ArduinoCommunication repository enables seamless, real-time interaction between Grasshopper and Arduino boards through serial communication. It provides a lightweight and adaptable bridge for embedding interactivity, responsive environments, or sensor-driven design processes into parametric workflows.
 
 ## Features
 - **Compatibility:** Supports Arduino UNO, NANO, and Mega boards.
