@@ -1,17 +1,20 @@
 # Grasshopper_ArduinoCommunication
 
-The Grasshopper_ArduinoCommunication repository enables seamless, real-time interaction between Grasshopper and Arduino boards through serial communication. It provides a lightweight and adaptable bridge for embedding interactivity, responsive environments, or sensor-driven design processes into parametric workflows.
+**Grasshopper_ArduinoCommunication** enables seamless, real-time interaction between Grasshopper (a visual programming environment in Rhino) and Arduino boards via serial communication. This lightweight and adaptable bridge supports embedding interactivity, responsive environments, and sensor-driven logic into parametric design workflows.
 
 ## Features
-- **Compatibility:** Supports Arduino UNO, NANO, and Mega boards.
-- **Real-time Communication:** Enables bi-directional communication between Grasshopper and Arduino via serial communication.
+- **Multi-Board Compatibility**: Supports Arduino UNO, NANO, and Mega boards.
+- **Real-Time Bi-Directional Communication**: Exchange data dynamically between Grasshopper and Arduino over serial protocols.
+- **Open & Extensible**: Designed to be lightweight and adaptable for prototyping, experimentation, and research.
 
 ## Requirements
-- **Grasshopper:** Ensure you have Grasshopper installed. Note: The Firefly plugin is **not supported in Rhino 8**.
-- **Firefly Plugin:** Install the [Firefly Grasshopper Plugin](https://www.food4rhino.com/en/app/firefly) to enable communication between Grasshopper and Arduino. Use a Rhino version compatible with Firefly (e.g., Rhino 6 or 7).
-- **Arduino IDE:** Install the [Arduino IDE](https://www.arduino.cc/en/software) to upload code to your Arduino boards.
-- **Arduino Boards:** Compatible with Arduino UNO, NANO, and Mega.
-
+- **Grasshopper**: Pre-installed in Rhino.  
+  > ⚠️ *Note: The Firefly plugin is not supported in Rhino 8.*
+- **Firefly Plugin**: Install the [Firefly Grasshopper Plugin](https://www.food4rhino.com/en/app/firefly) to establish the communication link. Compatible with Rhino 6 and 7.
+- **Arduino IDE**: Use the [official Arduino IDE](https://www.arduino.cc/en/software) to upload sketches to your board.  
+  *(At the time of writing, Arduino IDE version 2.3.6 is used.)*
+- **Arduino Boards**: UNO, NANO, and Mega models are supported.
+- 
 ## Getting Started
 Here are some useful video tutorials to get you started:
 - [Introduction to Firefly for Grasshopper](https://www.youtube.com/watch?v=a1fwyfkEHAg)
