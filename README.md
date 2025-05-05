@@ -28,20 +28,6 @@ Introductory tutorials:
 - [Introduction to Firefly for Grasshopper](https://www.youtube.com/watch?v=a1fwyfkEHAg)
 - [Interactive Design with Firefly](https://www.youtube.com/watch?v=4cGnw35fzzM)
 
-## Example Use Cases
-
-### Example: LED Control via Grasshopper
-
-- **Hardware**: Arduino + Breadboard + LED + Resistor
-- **Grasshopper File**: `LED_Blink.gh`
-- **Arduino Sketch**: `BasicLEDControl.ino`
-
-### Example: Sensor-Driven Parametric Change
-
-- **Hardware**: Arduino + Potentiometer
-- **Grasshopper File**: `AnalogInputRead.gh`
-- **Arduino Sketch**: `SensorRead.ino`
-
 ## Repository Structure
 
 - `GrasshopperFiles/`: Grasshopper scripts
