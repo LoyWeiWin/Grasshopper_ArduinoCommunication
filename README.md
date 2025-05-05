@@ -8,13 +8,12 @@
 - **Open & Extensible**: Designed to be lightweight and adaptable for prototyping, experimentation, and research.
 
 ## Requirements
-- **Grasshopper**: Pre-installed in Rhino.  
-  > ⚠️ *Note: The Firefly plugin is not supported in Rhino 8.*
+- **Grasshopper**: Pre-installed in Rhino 7. *Note: The Firefly plugin is not supported in Rhino 8.*
 - **Firefly Plugin**: Install the [Firefly Grasshopper Plugin](https://www.food4rhino.com/en/app/firefly) to establish the communication link. Compatible with Rhino 6 and 7.
 - **Arduino IDE**: Use the [official Arduino IDE](https://www.arduino.cc/en/software) to upload sketches to your board.  
   *(At the time of writing, Arduino IDE version 2.3.6 is used.)*
 - **Arduino Boards**: UNO, NANO, and Mega models are supported.
-- 
+
 ## Getting Started
 Here are some useful video tutorials to get you started:
 - [Introduction to Firefly for Grasshopper](https://www.youtube.com/watch?v=a1fwyfkEHAg)
