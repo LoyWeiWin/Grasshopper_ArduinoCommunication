@@ -1,46 +1,76 @@
 # Grasshopper_ArduinoCommunication
 
-**Grasshopper_ArduinoCommunication** enables seamless, real-time interaction between Grasshopper (a visual programming environment in Rhino) and Arduino boards via serial communication. This lightweight and adaptable bridge supports embedding interactivity, responsive environments, and sensor-driven logic into parametric design workflows.
+**Grasshopper_ArduinoCommunication** enables dynamic serial communication between Grasshopper (a visual programming environment within Rhino) and Arduino microcontrollers.
 
 ## Features
-- **Multi-Board Compatibility**: Supports Arduino UNO, NANO, and Mega boards.
-- **Real-Time Bi-Directional Communication**: Exchange data dynamically between Grasshopper and Arduino over serial protocols.
-- **Open & Extensible**: Designed to be lightweight and adaptable for prototyping, experimentation, and research.
+
+- **Board Compatibility**: Tested with Arduino UNO and Mega boards.
+- **Responsive Serial Communication**: Supports dynamic data exchange between Grasshopper and Arduino using the Firefly plugin.
+- **Modular and Open**: Designed for prototyping, educational use, and HCI research.
+
+## Compatibility Notes
+
+- **Grasshopper**: Native to Rhino 6/7; limited support in Rhino 8 due to .NET runtime changes.
+- **Firefly Plugin**: Requires `.NET Framework`. Use `SetDotNetRuntime` in Rhino 8 to switch from `.NET Core`.
+- **Arduino IDE**: Compatible with Arduino IDE 2.3.6 and earlier.
 
 ## Requirements
-- **Grasshopper**: Pre-installed in Rhino 7. *Note: The Firefly plugin is not supported in Rhino 8.*
-- **Firefly Plugin**: Install the [Firefly Grasshopper Plugin](https://www.food4rhino.com/en/app/firefly) to establish the communication link. Compatible with Rhino 6 and 7.
-- **Arduino IDE**: Use the [official Arduino IDE](https://www.arduino.cc/en/software) to upload sketches to your board.  
-  *(At the time of writing, Arduino IDE version 2.3.6 is used.)*
-- **Arduino Boards**: UNO, NANO, and Mega models are supported.
+
+- **Grasshopper** (included in Rhino 6/7)
+- **Firefly Plugin** ([Download](https://www.food4rhino.com/en/app/firefly))
+- **Arduino IDE** ([Download](https://www.arduino.cc/en/software))
+- **Arduino Boards**: UNO, Mega
 
 ## Getting Started
-Here are some useful video tutorials to get you started:
+
+Introductory tutorials:
+
 - [Introduction to Firefly for Grasshopper](https://www.youtube.com/watch?v=a1fwyfkEHAg)
 - [Interactive Design with Firefly](https://www.youtube.com/watch?v=4cGnw35fzzM)
 
-## Use Cases
-- [Firefly and Arduino LED Control](https://www.youtube.com/watch?v=TYRZSxwqlGg)
-- [Reading Sensor Data with Firefly](https://www.youtube.com/watch?v=yyuM2p2UDsE)
-- [Advanced Arduino Prototyping in Grasshopper](https://www.youtube.com/watch?v=RIMbaeGnDlI)
+## Example Use Cases
+
+### Example: LED Control via Grasshopper
+
+- **Hardware**: Arduino + Breadboard + LED + Resistor
+- **Grasshopper File**: `LED_Blink.gh`
+- **Arduino Sketch**: `BasicLEDControl.ino`
+
+### Example: Sensor-Driven Parametric Change
+
+- **Hardware**: Arduino + Potentiometer
+- **Grasshopper File**: `AnalogInputRead.gh`
+- **Arduino Sketch**: `SensorRead.ino`
 
 ## Repository Structure
-- `GrasshopperFiles/`: Grasshopper scripts.
-- `Assets/`: Images, thumbnails and videos
-- `Docs/`: Documentation for installation, and troubleshooting.
 
-> [!TIP]
-> For more setup instrucions and usage, see the [Wiki](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki).
+- `GrasshopperFiles/`: Grasshopper scripts
+- `Arduino/`: Arduino `.ino` sketches
+- `Assets/`: Images, thumbnails, and videos
+- `Docs/`: Additional local documentation
+
+## Limitations
+
+- Rhino 8 support is limited; ensure correct .NET runtime is set
+- Only one COM port/device supported at a time
 
 ## Contributing
-Contributions to improve this workflow are welcome! Please follow the contributing guidelines in the [contributing guidelines](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki/05_Contributing-Guidelines) in wiki.
+
+We welcome contributions to improve this repository. Please refer to the [Contributing Guidelines](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki/05_Contributing-Guidelines) in the Wiki.
 
 ## Code of Conduct
-This project follows the Contributor Covenant Code of Conduct. Please read our [Code of Conduct](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/blob/main/CODE_OF_CONDUCT.md) before contributing.
 
-> [!WARNING]  
-> If you are unfamiliar with using Arduino, please ensure you have supervision from a qualified advisor or professional. Alternatively, simulate your intended workflow in a Adobe TinkerCAD before working with Arduino.
-> The contributor or owner of this repository is not responsible for any physical damage, injury, or harm caused to the immediate environment or individuals due to improper usage of the tools.
+This project follows the Contributor Covenant Code of Conduct. Please read the [Code of Conduct](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/blob/main/CODE_OF_CONDUCT.md) before contributing.
 
-## Acknowledgements
-This project was independently developed as part of my personal initiative and commitment to advancing this field.
+## Safety Disclaimer
+
+If you are unfamiliar with Arduino, please seek supervision from a qualified advisor. Alternatively, simulate your workflow in [TinkerCAD](https://www.tinkercad.com/) before working with physical components. The repository contributors are not responsible for any harm caused by improper usage.
+
+## Author
+
+Developed by Loy Wei Win  
+PhD Researcher in Human-Robot Interaction and Parametric Design Systems
+
+If used in academic work, please cite:
+
+> Loy W. Win, *Grasshopper_ArduinoCommunication*, GitHub (2025).
