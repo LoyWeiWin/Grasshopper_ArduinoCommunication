@@ -30,8 +30,7 @@ Introductory tutorials:
 
 ## Repository Structure
 
-- `GrasshopperFiles/`: Grasshopper scripts
-- `Arduino/`: Arduino `.ino` sketches
+- `Project/`: Grasshopper scripts, Arduino sketches (need to upload to the microcontrollers prior interfacing with grasshopper), Wiring schematics, Diagrammatic sketches, Usage
 - `Assets/`: Images, thumbnails, and videos
 - `Docs/`: Additional local documentation
 
@@ -50,7 +49,13 @@ This project follows the Contributor Covenant Code of Conduct. Please read the [
 
 ## Safety Disclaimer
 
-If you are unfamiliar with Arduino, please seek supervision from a qualified advisor. Alternatively, simulate your workflow in [TinkerCAD](https://www.tinkercad.com/) before working with physical components. The repository contributors are not responsible for any harm caused by improper usage.
+If you are unfamiliar with Arduino or electronics, seek supervision from a qualified advisor or instructor before working with physical components. While many Arduino applications operate at low voltage, some functions—such as driving motors, actuators, or high-current loads—require additional power sources or external circuitry, which may introduce electrical hazards if mishandled.
+
+Improper wiring or grounding can lead to equipment damage, fire hazards, or personal injury. Always follow best practices in electronics, and if your setup involves voltages above 12V, high current, or external power supplies, ensure you have formal electrical training and wear proper PPE (Personal Protective Equipment) such as insulated gloves, safety glasses, and antistatic protection.
+
+To mitigate risks, you are strongly encouraged to simulate your workflow using virtual tools like TinkerCAD Circuits before attempting physical deployment.
+
+The contributors and maintainers of this repository are not responsible for any physical damage, injury, or environmental harm resulting from improper or unsafe use of the provided resources.
 
 ## Author
 
