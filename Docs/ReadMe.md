@@ -30,22 +30,14 @@ Introductory tutorials:
 
 ## Repository Structure
 
-- `Project/`: Grasshopper scripts, Arduino sketches (need to upload to the microcontrollers prior interfacing with grasshopper), Wiring schematics, Diagrammatic sketches, Usage
-- `Assets/`: Images, thumbnails, and videos
-- `Docs/`: Additional local documentation
+- `Project/`: Grasshopper scripts, Arduino sketches (need to upload to the microcontrollers prior to interfacing with Grasshopper), wiring schematics, diagrammatic sketches, usage examples.
+- `Assets/`: Images, thumbnails, and videos.
+- `Docs/`: Additional local documentation.
 
 ## Limitations
 
-- Rhino 8 support is limited; ensure correct .NET runtime is set
-- Only one COM port/device supported at a time
-
-## Contributing
-
-We welcome contributions to improve this repository. Please refer to the [Contributing Guidelines](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/wiki/05_Contributing-Guidelines) in the Wiki.
-
-## Code of Conduct
-
-This project follows the Contributor Covenant Code of Conduct. Please read the [Code of Conduct](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/blob/main/CODE_OF_CONDUCT.md) before contributing.
+- Rhino 8 support is limited; ensure correct .NET runtime is set.
+- Only one COM port/device supported at a time.
 
 ## Safety Disclaimer
 
@@ -65,3 +57,17 @@ PhD Researcher in Human-Robot Interaction and Parametric Design Systems
 If used in academic work, please cite:
 
 > Loy W. Win, *Grasshopper_ArduinoCommunication*, GitHub (2025).
+ 
+## Code of Conduct
+This project follows the Contributor Covenant Code of Conduct. Please read the [Code of Conduct](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/blob/main/CODE_OF_CONDUCT.md) before contributing.
+
+## Contributing
+
+### How to Contribute
+- Fork the repository and create a new branch for your changes.  
+- Ensure code adheres to the existing style and conventions.  
+- Submit a pull request with a clear description of your changes.
+
+### Reporting Issues
+- Use the GitHub **Issues** tab to report bugs or suggest features.  
+- Provide a detailed description, including screenshots or logs if possible.
