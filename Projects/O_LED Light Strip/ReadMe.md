@@ -23,7 +23,7 @@ Refer to the included schematic file for full wiring details.
 Before communicating with Grasshopper, upload the **Firmata firmware** to your Arduino.
 
 1. Open the Arduino IDE.
-2. Navigate to `File` → `Examples` → `Firmata` → `StandardFirmata`.
+2. Open the Firmata file `ArduinoSketch_Firmata`.
 3. Under `Tools`, select your **Board** (UNO or Mega) and **Port**.
 4. Click **Upload**.
 
@@ -31,7 +31,9 @@ Once uploaded, the Arduino will be able to receive RGB values from Grasshopper o
 
 ## How the System Works
 
-Within Grasshopper, a **button component** (in the green group) or similar UI element triggers RGB color updates. These values are transmitted via **Firefly**, **Heteroduino**, or a compatible serial plugin. The Arduino receives the RGB values (0–255) and generates corresponding **PWM signals** on each color channel.
+<img src="IMG_RGBLightStrip_Grasshopper.png" alt="Sample image caption1" width="600"/>
+
+Within Grasshopper, a **button component** (in green group) or similar  UI element triggers RGB color updates. These values are transmitted via **Firefly**, **Heteroduino**, or a compatible serial plugin. The Arduino receives the RGB values (0–255) and generates corresponding **PWM signals** on each color channel.
 
 Color channel mapping:
 
