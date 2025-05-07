@@ -3,7 +3,9 @@
 This project demonstrates how to control a **servo motor** from **Grasshopper (Rhino)** using the **Firefly plugin** and an Arduino. The servo actuates a **3D-printed gripper mechanism**, enabling real-time interactive physical behavior driven by parametric inputs.
 
 
-## Components
+## Electronic Components
+
+<img src="IMG_ReadingLightingLevel_OverallSetout.png" alt="Wiring setup for Le" width="600"/>
 
 - 1 × **Micro Servo Motor** (e.g., SG90 or MG90S)
 - 1 × **Arduino UNO or Mega** (verified)
