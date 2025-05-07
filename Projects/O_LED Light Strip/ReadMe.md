@@ -6,6 +6,8 @@ This project enables real-time control of a **5V RGB LED light strip** using int
 
 Refer to the included schematic file for full wiring details.
 
+<img src="IMG_RGBLightStrip_OverallSetout.png" alt="Sample image caption0" width="600"/>
+
 - 1 × **5V RGB LED Strip (common anode with built-in resistors)**
 - 1 × **Arduino UNO or Mega** (verified)
 - Jumper wires
