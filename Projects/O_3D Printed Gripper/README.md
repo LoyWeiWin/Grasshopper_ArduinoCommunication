@@ -9,8 +9,7 @@ This project demonstrates how to control a **servo motor** from **Grasshopper (R
 - 1 × **Arduino UNO or Mega** (verified)
 - Jumper wires
 - Optional: External 5V power supply (recommended for stable performance)
-- 1 × [3D Printed Gripper]((https://www.thingiverse.com/thing:2985850)
-- Firefly Plugin for Grasshopper
+- 1 × [3D Printed Gripper](https://www.thingiverse.com/thing:2985850)
 
 ## Uploading the Arduino Firmware
 
