@@ -4,7 +4,7 @@ This project demonstrates how to use a **photodiode-based light sensor** with an
 
 ## Electronic Components
 
-![Wiring setup for LightLux](IMG_ReadingLightingLevel_OverallSetout.png)
+<img src="IMG_ReadingLightingLevel_OverallSetout.png" alt="Wiring setup for LightLux" width="600"/>
 
 - 1 × **Photodiode** (any general-purpose silicon photodiode)
 - 1 × **10kΩ Resistor** (for voltage divider)
@@ -41,12 +41,6 @@ While fast and responsive, photodiodes come with some limitations:
 - **Directional Bias**: Photodiodes are directional and sensitive to sensor orientation.
 
 For high-precision measurements, consider using a photodiode with a **transimpedance amplifier** or upgrading to a **lux-calibrated sensor** (e.g., TSL2561, BH1750).
-
-## Suggested Calibration Procedure
-
-1. Use a lux meter (or smartphone app) to capture known light levels in your test environment.
-2. Record corresponding Arduino `analogRead()` values.
-3. Fit a curve (linear, exponential, or logarithmic) to map raw values to real-world lux.
 
 ## Safety and Experimental Use
 
