@@ -3,7 +3,6 @@
 **Grasshopper_ArduinoCommunication** enables dynamic serial communication between Grasshopper (a visual programming environment within Rhino) and Arduino microcontrollers.
 
 ## Features
-
 - **Board Compatibility**: Tested with Arduino UNO and Mega boards.
 - **Responsive Serial Communication**: Supports dynamic data exchange between Grasshopper and Arduino using the Firefly plugin.
 - **Modular and Open**: Designed for prototyping, educational use, and HCI research.
@@ -27,6 +26,7 @@ Introductory tutorials:
 
 - [Introduction to Firefly for Grasshopper](https://www.youtube.com/watch?v=a1fwyfkEHAg)
 - [Interactive Design with Firefly](https://www.youtube.com/watch?v=4cGnw35fzzM)
+- [Arduino Guide](https://www.arduino.cc/en/Guide/)
 
 ## Repository Structure
 
