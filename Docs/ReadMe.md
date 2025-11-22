@@ -1,73 +1,150 @@
-# Grasshopper_ArduinoCommunication
+# Grasshopper_Machine-Bridge  
+*(formerly **Grasshopper_ArduinoCommunication**)*
 
-**Grasshopper_ArduinoCommunication** enables dynamic serial communication between Grasshopper (a visual programming environment within Rhino) and Arduino microcontrollers.
+**Grasshopper_Machine-Bridge** is a modular, bidirectional communication framework connecting **Grasshopper** (Rhino), **Universal Robots (UR RTDE)**, and **Arduino/ESP32** microcontrollers.  
 
-## Features
-- **Board Compatibility**: Tested with Arduino UNO and Mega boards.
-- **Responsive Serial Communication**: Supports dynamic data exchange between Grasshopper and Arduino using the Firefly plugin.
-- **Modular and Open**: Designed for prototyping, educational use, and HCI research.
+It allows ambient sensing (light, proximity, buttons, audio cues) and robotic feedback (LEDs, buzzers, motion visualization) to work in tandem—enabling **legible, expressive, and context-aware non-anthropomorphic robots**.
 
-## Compatibility Notes
+---
 
-- **Grasshopper**: Native to Rhino 6/7; limited support in Rhino 8 due to .NET runtime changes.
-- **Firefly Plugin**: Requires `.NET Framework`. Use `SetDotNetRuntime` in Rhino 8 to switch from `.NET Core`.
-- **Arduino IDE**: Compatible with Arduino IDE 2.3.6 and earlier.
+## Key Features
+- **Bidirectional Communication:** Real-time data exchange between Grasshopper, UR robots, and Arduino/ESP32.  
+- **Multi-Protocol Support:** Serial (USB) and UDP/Wi-Fi for flexible setups.  
+- **UR Integration:** Direct connection to UR and Dashboard Server for robot state feedback and motion control.  
+- **Ambient Interaction:** Translate environmental changes into robotic responses, and vice versa.  
+- **Extensible Demo Library:** Each demo showcases a unique sensing/actuation workflow—ready to fork, extend, or remix.  
 
-## Requirements
+---
 
-- **Grasshopper** (included in Rhino 6/7)
-- **Firefly Plugin** ([Download](https://www.food4rhino.com/en/app/firefly))
-- **Arduino IDE** ([Download](https://www.arduino.cc/en/software))
-- **Arduino Boards**: UNO, Mega
+## 🖥Compatibility
+
+| Component | Notes |
+|------------|-------|
+| **Grasshopper** | Rhino 6, 7, 8 (*ensure correct .NET runtime in Rhino 8*) |
+| **Arduino IDE / ESP32** | Works with UNO, Mega, and ESP32 boards (Wi-Fi capable) |
+| **Firefly / UDP Plugins** | For serial or network communication within Grasshopper |
+
+---
+
+##  Requirements
+- **Rhino + Grasshopper**  
+- **Arduino IDE 2.x** or ESP32 core ([Installation Guide](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html))  
+- **Firefly Plugin** ([Download](https://www.food4rhino.com/en/app/firefly))  
+- **Optional:** Stable Wi-Fi connection for UDP communication  
+
+---
 
 ## Getting Started
 
-Introductory tutorials:
+### 1 – Explore a Demo
+Each demo lives in `/Project/demos/<demo-name>/` and includes:
+- `serial/` and `udp/` variants (for Arduino and ESP32)
+- `.ino` and `.gh` files
+- wiring diagrams and media assets
+- a local `README.md` (human guide)
+- a `manifest.yaml` (machine-readable metadata)
 
-- [Introduction to Firefly for Grasshopper](https://www.youtube.com/watch?v=a1fwyfkEHAg)
-- [Interactive Design with Firefly](https://www.youtube.com/watch?v=4cGnw35fzzM)
-- [Arduino Guide](https://www.arduino.cc/en/Guide/)
+Example:
+```
+/Project/demos/lux-trigger/
+  /serial/
+    LuxTrigger_Serial.gh
+    LuxTrigger_Serial.ino
+    wiring-LDR.pdf
+    README.md
+  /udp/
+    LuxTrigger_UDP.gh
+    LuxTrigger_UDP.ino
+    wiring-LDR-ESP32.pdf
+    README.md
+  manifest.yaml
+```
+
+### 2 – Upload Firmware  
+Upload the relevant `.ino` from the chosen variant folder.  
+Use **Serial** for Arduino (USB) or **UDP** for ESP32 (Wi-Fi).
+
+### 3 – Run Grasshopper Script  
+Open the corresponding `.gh` file.  
+Set COM port (Serial) or IP address (UDP).  
+Start streaming data bidirectionally.
+
+---
+
+## Tutorials & References
+- [Firefly for Grasshopper (Video)](https://www.youtube.com/watch?v=a1fwyfkEHAg)  
+- [Interactive Design with Firefly](https://www.youtube.com/watch?v=4cGnw35fzzM)  
+- [Arduino Getting Started Guide](https://www.arduino.cc/en/Guide/)  
+- [ESP32 UDP Example](https://randomnerdtutorials.com/esp32-udp-client-arduino/)  
+
+---
 
 ## Repository Structure
+```
+/Project/
+  /_shared/             → Shared libraries & Grasshopper clusters
+  /demos/               → Individual demo projects
+  /templates/demo/      → Starter demo templates
+/Docs/                  → Technical papers, safety, RTDE notes
+/Assets/                → Images & videos
+LICENSE
+README.md               → Root overview
+```
 
-- `Project/`: Grasshopper scripts, Arduino sketches (need to upload to the microcontrollers prior to interfacing with Grasshopper), wiring schematics, diagrammatic sketches, usage examples.
-- `Assets/`: Images, thumbnails, and videos.
-- `Docs/`: Additional local documentation.
+---
 
-## Limitations
+## 🧩 `manifest.yaml` vs `README.md` in Each Demo
 
-- Rhino 8 support is limited; ensure correct .NET runtime is set.
-- Only one COM port/device supported at a time.
+| File | Purpose | Audience | Example Content |
+|------|----------|-----------|----------------|
+| **`manifest.yaml`** | Metadata for indexing, CI, and automation | Machines / scripts | name, slug, sensors, transports, board types, file paths |
+| **`README.md`** | Instructions, wiring, behavior, safety notes | Humans (users / students / researchers) | setup steps, screenshots, expected output, troubleshooting |
+
+---
+
+## Repository Evolution
+Originally developed as **Grasshopper_ArduinoCommunication**, this project focused solely on serial communication.  
+It has since evolved into **Grasshopper_Machine-Bridge**, supporting **multi-protocol, bidirectional communication** between Grasshopper, UR RTDE, and Arduino/ESP32 hardware.  
+The new modular structure enables dozens of stand-alone demos, each illustrating a distinct **human–robot interaction** or **intention visualization** workflow.
+
+---
 
 ## Safety Disclaimer
 
-If you are unfamiliar with Arduino or electronics, seek supervision from a qualified advisor or instructor before working with physical components. While many Arduino applications operate at low voltage, some functions—such as driving motors, actuators, or high-current loads—require additional power sources or external circuitry, which may introduce electrical hazards if mishandled.
+If you are unfamiliar with **Arduino, ESP32, or electronics**, seek guidance from a qualified advisor before building physical prototypes.  
+Although most circuits run at low voltage (5 V), driving motors, LED strips, or actuators can require external power and introduce hazards.
 
-Improper wiring or grounding can lead to equipment damage, fire hazards, or personal injury. Always follow best practices in electronics, and if your setup involves voltages above 12V, high current, or external power supplies, ensure you have formal electrical training and wear proper PPE (Personal Protective Equipment) such as insulated gloves, safety glasses, and antistatic protection.
+**Always:**
+- Simulate first (e.g., *TinkerCAD Circuits*, *URSim*, *RoboDK*).  
+- Keep a hardware **E-Stop** within reach.  
+- Avoid live wiring on moving robots.  
+- Follow institutional safety policies and wear proper PPE (gloves, glasses, ESD strap).  
 
-To mitigate risks, you are strongly encouraged to simulate your workflow using virtual tools like TinkerCAD Circuits before attempting physical deployment.
+The authors and maintainers assume **no liability** for damage or injury from improper use.
 
-The contributors and maintainers of this repository are not responsible for any physical damage, injury, or environmental harm resulting from improper or unsafe use of the provided resources.
+---
 
-## Author
+## 🧑Author
+**Loy Wei Win**  
+PhD Researcher, Human-Robot Interaction & Parametric Design Systems  
+Queensland University of Technology (QUT)
 
-Developed by Loy Wei Win  
-PhD Researcher in Human-Robot Interaction and Parametric Design Systems
+> Loy W. Win, *Grasshopper_Machine-Bridge: A Bidirectional Interface for Robotic Legibility*, GitHub (2025)
 
-If used in academic work, please cite:
-
-> Loy W. Win, *Grasshopper_ArduinoCommunication*, GitHub (2025).
- 
-## Code of Conduct
-This project follows the Contributor Covenant Code of Conduct. Please read the [Code of Conduct](https://github.com/LoyWeiWin/Grasshopper_ArduinoCommunication/blob/main/CODE_OF_CONDUCT.md) before contributing.
+---
 
 ## Contributing
+1. Fork the repository and create a feature branch.  
+2. Follow the existing naming and documentation style.  
+3. Add your demo under `/Project/demos/`.  
+4. Include a `manifest.yaml` and `README.md` for each variant.  
+5. Submit a Pull Request with a clear description and media assets.
 
-### How to Contribute
-- Fork the repository and create a new branch for your changes.  
-- Ensure code adheres to the existing style and conventions.  
-- Submit a pull request with a clear description of your changes.
+---
 
-### Reporting Issues
-- Use the GitHub **Issues** tab to report bugs or suggest features.  
-- Provide a detailed description, including screenshots or logs if possible.
+## Adding a New Demo (Quick Guide)
+1. Copy `/templates/demo/serial` or `/templates/demo/udp` into `/Project/demos/<new-demo>/`.  
+2. Rename files (e.g., `MyDemo_Serial.ino`, `MyDemo_Serial.gh`).  
+3. Edit the demo’s `manifest.yaml`.  
+4. Update the local `README.md` with setup instructions and safety notes.  
+5. Test in simulation → tethered → Wi-Fi progression.  

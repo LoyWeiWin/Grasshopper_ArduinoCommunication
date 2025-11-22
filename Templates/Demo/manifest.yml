@@ -1,0 +1,16 @@
+name: Lux Trigger
+slug: lux-trigger
+description: >
+  Uses an LDR sensor to trigger robot LED feedback when light intensity crosses threshold.
+transports: [serial, udp]
+boards: [arduino_uno, esp32_wroom]
+sensors: [ldr]
+actuators: [led, buzzer]
+ur:
+  rtde: true
+rhino_versions: [7,8]
+safety: ["estop", "ppe"]
+docs:
+  readme: README.md
+  wiring: wiring-LDR.pdf
+  video: ../../Assets/videos/lux-trigger-demo.mp4
